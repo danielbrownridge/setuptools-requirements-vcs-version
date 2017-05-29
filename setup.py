@@ -23,5 +23,5 @@ setup(
     name="setuptools-requirements-vcs-version",
     packages=find_packages("src"),
     package_dir={"":"src"},
-    url="https://github.com/danielbrownridge/setuptools-requirments-vcs-version"
+    url="https://github.com/danielbrownridge/setuptools-requirements-vcs-version"
 )
