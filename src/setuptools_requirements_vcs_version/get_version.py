@@ -1,2 +1,2 @@
-def get_version():
+def get_version(name, requirments):
     pass

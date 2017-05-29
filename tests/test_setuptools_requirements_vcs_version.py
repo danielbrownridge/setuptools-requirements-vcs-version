@@ -8,9 +8,9 @@ def test_get_version():
     """
     Check that a version can be retrieved from requiremnts data.
     """
+    name = "foo"
+    requirments = "git+https://example.com/path/repo.git@1.2.3#egg=foo"
 
-    version = get_version()
+    version = get_version(name, requirments)
 
-    print(version)
-
-    assert False
+    assert version == "1.2.3"
