@@ -7,7 +7,7 @@ setup(
     author="Daniel Brownridge",
     author_email="daniel@freshnewpage.com",
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
@@ -17,12 +17,13 @@ setup(
     ],
     description="Extract package version from requirements.txt VCS URLs",
     install_requires=[
-        "requirements-parser"
+        "requirements-parser",
+        "semantic_version",
     ],
     license="MIT",
     name="setuptools-requirements-vcs-version",
     packages=find_packages("src"),
     package_dir={"":"src"},
     url="https://github.com/danielbrownridge/setuptools-requirements-vcs-version",
-    version="0.0.3",
+    version="0.1.0",
 )

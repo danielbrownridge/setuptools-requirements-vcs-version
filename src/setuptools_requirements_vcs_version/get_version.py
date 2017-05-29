@@ -6,6 +6,7 @@ This works assuming a convention that the repository will be tagged as the
 version number and that URL will have the tag as the specifier.
 """
 from requirements import parse
+from semantic_version import Version
 
 REQFILE = open("requirements.txt")
 
@@ -19,7 +20,8 @@ def get_version(name, reqfile=REQFILE):
 
     for requirement in requirements:
         if name == requirement.name:
-            return requirement.revision
+            version = Version(requirement.revision)
+            return version
 
     return None
 

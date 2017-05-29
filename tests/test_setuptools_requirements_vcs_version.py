@@ -15,7 +15,10 @@ def test_get_version():
 
     version = get_version(name, requirements)
 
-    assert version == "1.2.3"
+    assert str(version) == "1.2.3"
+    assert version.major == 1
+    assert version.minor == 2
+    assert version.patch == 3
 
 def test_get_version_from_file():
     """
@@ -27,4 +30,4 @@ def test_get_version_from_file():
 
     version = get_version(name)
 
-    assert version == "1.2.3"
+    assert str(version) == "1.2.3"
