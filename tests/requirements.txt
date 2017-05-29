@@ -1,0 +1,1 @@
+  git+https://example.com/path/repo.git@1.2.3#egg=foo

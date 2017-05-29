@@ -7,7 +7,9 @@ version number and that URL will have the tag as the specifier.
 """
 from requirements import parse
 
-def get_version(name, reqfile):
+REQFILE = open("requirements.txt")
+
+def get_version(name, reqfile=REQFILE):
     """
     Given the name of the package and requirements file, determine the
     package version.
