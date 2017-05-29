@@ -7,7 +7,7 @@ setup(
     author="Daniel Brownridge",
     author_email="daniel@freshnewpage.com",
     classifiers=[
-        "Development Status :: 1 - Planning",
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
@@ -23,5 +23,6 @@ setup(
     name="setuptools-requirements-vcs-version",
     packages=find_packages("src"),
     package_dir={"":"src"},
-    url="https://github.com/danielbrownridge/setuptools-requirements-vcs-version"
+    url="https://github.com/danielbrownridge/setuptools-requirements-vcs-version",
+    version="0.0.3",
 )
